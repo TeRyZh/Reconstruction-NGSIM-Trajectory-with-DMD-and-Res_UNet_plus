@@ -32,9 +32,9 @@ The following figure shows the spatial temporal map was separated into foregroun
 ### Res-Unet+ Model
 The Res-UNet+ model integrates two common deep learning architectures, using the ResNet block as the backbone and further improves its performance by modifying the UNet model architecture. In the encoding process, the ResNet blocks replace the original encoders in the UNet model. The interconnections between encoding and decoding layers were designed to reduce the semantic gap. To enhance the performance, we added the intra-connections among different levels of decoding stages. Our proposed ResUnet+ model was compared with ResNet, Unet, SegNet, DeepLabv3, FCN and shows best performance. 
 <p align="center">
-  <img align="middle" width="500" height="400" src="https://github.com/TeRyZh/Reconstructing-NGSIM-Trajectory-with-ResUnet--and-DMD/blob/main/figs/Res-UNet_plus.png" >
+  <img align="middle" width="400" height="300" src="https://github.com/TeRyZh/Reconstructing-NGSIM-Trajectory-with-ResUnet--and-DMD/blob/main/figs/Res-UNet_plus.png" >
    
-  <img align="middle" width="300" height="400" src="https://github.com/TeRyZh/Reconstructing-NGSIM-Trajectory-with-ResUnet--and-DMD/blob/main/figs/segmentation_comparison_small.png" >
+  <img align="middle" width="200" height="400" src="https://github.com/TeRyZh/Reconstructing-NGSIM-Trajectory-with-ResUnet--and-DMD/blob/main/figs/segmentation_comparison_small.png" >
 </p>
 
 ### NGSIM Data Reconstruction
