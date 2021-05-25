@@ -1,4 +1,4 @@
-# Reconstructing-NGSIM-Trajectory-with-ResUnet+-and-DMD
+# Reconstruction-NGSIM-Trajectory-with-ResUnet+-and-DMD
 This contains the model and data for reconstructing NGSIM dataset
 
 ### Table of contents
