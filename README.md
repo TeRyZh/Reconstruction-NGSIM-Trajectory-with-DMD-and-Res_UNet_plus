@@ -18,7 +18,7 @@ This contains the model and data for reconstructing NGSIM dataset
   The Scanline method stems from the Spatial-Temporal Slice (STS) structure used in computer vision literature. In transportation research, the technique is named as scanline method, which are a set of pixels that can capture object movements on user-selected roadway from the video image. After stacking scanline pixels together over continuous frames, Spatial Temporal Map (STMap) is obtained. On STMap, the horizontal axis shows the time progression, and the vertical axis contains distance information. 
   Two types of scanlines are used in traffic detection, lateral and longitudinal scanlines. The lateral scanline is a cross-section scanline across a lane, whereas the longitudinal scanline is a line along traffic direction. The lateral scanline method was intended primarily for traffic counting and speed measurement. The longitudinal scanline method was used for vehicle tracking and detection. 
 <p align="center">
-  <img  width="500" height="200" src="https://github.com/TeRyZh/Reconstructing-NGSIM-Trajectory-with-ResUnet--and-DMD/blob/main/figs/STMap_generation.png" >
+  <img  width="550" height="200" src="https://github.com/TeRyZh/Reconstructing-NGSIM-Trajectory-with-ResUnet--and-DMD/blob/main/figs/STMap_generation.png" >
 </p>
 
 ### Dyanmic Mode Decomposition
@@ -30,9 +30,11 @@ The following figure shows the spatial temporal map was separated into foregroun
 </p>
 
 ### Res-Unet+ Model
-The Res-UNet+ model integrates two common deep learning architectures, using the ResNet block as the backbone and further improves its performance by modifying the UNet model architecture. In the encoding process, the ResNet blocks replace the original encoders in the UNet model. The interconnections between encoding and decoding layers were designed to reduce the semantic gap. To enhance the performance, we added the intra-connections among different levels of decoding stages. 
+The Res-UNet+ model integrates two common deep learning architectures, using the ResNet block as the backbone and further improves its performance by modifying the UNet model architecture. In the encoding process, the ResNet blocks replace the original encoders in the UNet model. The interconnections between encoding and decoding layers were designed to reduce the semantic gap. To enhance the performance, we added the intra-connections among different levels of decoding stages. Our proposed ResUnet+ model was compared with ResNet, Unet, SegNet, DeepLabv3, FCN and shows best performance. 
 <p align="center">
   <img align="middle" width="500" height="400" src="https://github.com/TeRyZh/Reconstructing-NGSIM-Trajectory-with-ResUnet--and-DMD/blob/main/figs/Res-UNet_plus.png" >
+   
+  <img align="middle" width="300" height="400" src="https://github.com/TeRyZh/Reconstructing-NGSIM-Trajectory-with-ResUnet--and-DMD/blob/main/figs/segmentation_comparison_small.png" >
 </p>
 
 ### NGSIM Data Reconstruction
@@ -44,7 +46,7 @@ The blue lines are plotted with NGSIM data, while the red bars are detected vehi
   <img align="middle" width="500" height="400" src="https://github.com/TeRyZh/Reconstructing-NGSIM-Trajectory-with-ResUnet--and-DMD/blob/main/figs/NGSIM%20Video%20Validation.png" >
 </p>
 
-Due to the false assumption of the 2D homography projection that all objects are on the same ground, the NGSIM data only capture the off-ground features of large the vehicles (e.g., trucks and buses) resulting in the self-occlusion issue. The following figure compares the original NGSIM and reconstructed trajectory data in the video frames. For large vehicles, NGSIM data can have significant distance errors (see the large white vehicle from HOV lane in the Figure 11). 
+Due to the false assumption of the 2D homography projection that all objects are on the same ground, the NGSIM data only capture the off-ground features of large the vehicles (e.g., trucks and buses) resulting in the self-occlusion issue. The following figure compares the original NGSIM and reconstructed trajectory data in the video frames. For large vehicles, NGSIM data can have significant distance errors (see the large white vehicle from HOV lane in the following Figure). 
 
 <p align="center">
   <img align="middle" width="300" height="200" src="https://github.com/TeRyZh/Reconstructing-NGSIM-Trajectory-with-ResUnet--and-DMD/blob/main/figs/off_ground_feature.png" >
@@ -52,12 +54,23 @@ Due to the false assumption of the 2D homography projection that all objects are
 
 #### Reconstructed NGSIM I-80 Data
 
-#### Camera 1
+The proposed models were used to identify NGSIM data quality issues and further reconstructed the dataset completely. By processing the NGSIM videos from four cameras (1000 ft area), we conducted a comprehensive cleaning of the datasets and achieved significant quality improvement.
 
-#### Camera 2
+<p align="center">
+  <img align="middle" width="900" height="500" src="https://github.com/TeRyZh/Reconstructing-NGSIM-Trajectory-with-ResUnet--and-DMD/blob/main/figs/traj_comparison.png" >
+</p>
 
-#### Camera 3
+The reconstructed trajectory data was oganized in original NGSIM format. We provide .fig files for each lane to show the quality improvements using our method to acquire the state-of-the-art trajectory extraction results. 
 
-#### Camera 4
+Trajectory plotted on raw video data can be found in the following link. 
+
+#### [Camera 1](https://www.youtube.com/watch?v=J58d2V2vCGM&list=PLC4d9Yu1vCsn4mAESXLUDmyxFC0vR3KOI&index=1)
+
+#### [Camera 2](https://www.youtube.com/watch?v=8mqe8jDigMk&list=PLC4d9Yu1vCsn4mAESXLUDmyxFC0vR3KOI&index=2)
+
+#### [Camera 3](https://www.youtube.com/watch?v=jzBmvpLR_ZA&list=PLC4d9Yu1vCsn4mAESXLUDmyxFC0vR3KOI&index=3)
+
+#### [Camera 4](https://www.youtube.com/watch?v=L63fW94txoA&list=PLC4d9Yu1vCsn4mAESXLUDmyxFC0vR3KOI&index=4)
 
 ### Contributing
+If you found any errors or bugs in our program or new dataset please contact: terry.tianya.zhang@gmail.com
