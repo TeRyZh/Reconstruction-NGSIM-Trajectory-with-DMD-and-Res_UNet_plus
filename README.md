@@ -3,7 +3,7 @@ This contains the model and data for reconstructing NGSIM dataset
 
 ### Table of contents
 1. [Scanline and Spatial Temporal Map](#Scanline-and-Spatial-Temporal-Map)
-2. [About Dmd](#about-Dyanmic-Mode-Decomposition)
+2. [About DMD](#about-Dyanmic-Mode-Decomposition)
 3. [Res-Unet+ Model](#Res-Unet+-Model)
 4. [NGSIM Data Reconstruction](#NGSIM-Data-Reconstruction)
     * [New I-80 DataSet](#Reconstructed-NGSIM-I-80-Data)
