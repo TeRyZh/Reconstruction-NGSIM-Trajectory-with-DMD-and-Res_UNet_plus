@@ -31,9 +31,7 @@ The following figure shows the spatial temporal map was separated into foregroun
 ### Res_UNet_plus-Model
 The Res-UNet+ model integrates two common deep learning architectures, using the ResNet block as the backbone and further improves its performance by modifying the UNet model architecture. In the encoding process, the ResNet blocks replace the original encoders in the UNet model. The interconnections between encoding and decoding layers were designed to reduce the semantic gap. To enhance the performance, we added the intra-connections among different levels of decoding stages. Our proposed ResUnet+ model was compared with ResNet, Unet, SegNet, DeepLabv3, FCN and shows best performance. 
 <p align="center">
-  <img align="middle" width="400" height="300" src="https://github.com/TeRyZh/Reconstructing-NGSIM-Trajectory-with-ResUnet--and-DMD/blob/main/figs/Res-UNet_plus.png" >
-   
-  <img align="middle" width="200" height="400" src="https://github.com/TeRyZh/Reconstructing-NGSIM-Trajectory-with-ResUnet--and-DMD/blob/main/figs/segmentation_comparison_small.png" >
+   <img align="middle" width="600" height="400" src="https://github.com/TeRyZh/Reconstruction-NGSIM-Trajectory-with-DMD-and-Res_UNet_plus/blob/main/figs/Model%20Performance.png" >
 </p>
 
 ### NGSIM-Data-Reconstruction
@@ -41,7 +39,16 @@ One of the most impactful video-based trajectory datasets is the next generation
 
 The blue lines are plotted with NGSIM data, while the red bars are detected vehicle trajectories by the our method. In the video frame, many of the vehicle trackers are drifted, in contrast, our model output shows very stable tracking capability. The drifting problems frequently happen when cars are joining or leaving a congested platoon. Next figure also displays another tracking error that vehicle 2144 was miss-identified as vehicle 2143 after vehicle 2144 changed from lane 5 to lane 4. This type of error can not be corrected with smoothing or filtering. 
 
+<p align="center">
+   <img align="middle" width="600" height="400" src="https://github.com/TeRyZh/Reconstruction-NGSIM-Trajectory-with-DMD-and-Res_UNet_plus/blob/main/figs/NGSIM%20Video%20Validation.png" >
+</p>
+
+
 ### New-NGSIM-I-80-Data
+
+<p align="center">
+   <img align="middle" width="900" height="500" src="https://github.com/TeRyZh/Reconstruction-NGSIM-Trajectory-with-DMD-and-Res_UNet_plus/blob/main/figs/traj_comparison.png" >
+</p>
 
 #### [Camera-1](https://www.youtube.com/watch?v=J58d2V2vCGM&list=PLC4d9Yu1vCsn4mAESXLUDmyxFC0vR3KOI&index=1)
 
