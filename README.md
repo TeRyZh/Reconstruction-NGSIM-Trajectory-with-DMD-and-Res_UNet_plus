@@ -1,5 +1,5 @@
 # Reconstruction-NGSIM-Trajectory-with-DMD-and-Res_UNet_plus
-This repo contains the model and data for reconstructing NGSIM dataset. [Paper Link](https://github.com/TeRyZh/Reconstruction-NGSIM-Trajectory-with-DMD-and-Res_UNet_plus/blob/main/2021.10.04_DMD%20and%20ResUNet%20for%20vehicle%20trajectoy%20extraction.pdf)
+This repo contains the model and data for reconstructing NGSIM dataset. [Paper Link](https://arxiv.org/abs/2201.04755)
 
 ### Table of contents
 1. [Scanline and Spatial Temporal Map](#Scanline-and-Spatial-Temporal-Map)
