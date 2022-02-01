@@ -50,13 +50,17 @@ The blue lines are plotted with NGSIM data, while the red bars are detected vehi
    <img align="middle" width="900" height="500" src="https://github.com/TeRyZh/Reconstruction-NGSIM-Trajectory-with-DMD-and-Res_UNet_plus/blob/main/figs/traj_comparison.png" >
 </p>
 
-#### [Camera-1](https://www.youtube.com/watch?v=J58d2V2vCGM&list=PLC4d9Yu1vCsn4mAESXLUDmyxFC0vR3KOI&index=1)
+#### Camera-1
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=J58d2V2vCGM&list=PLC4d9Yu1vCsn4mAESXLUDmyxFC0vR3KOI&index=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### [Camera-2](https://www.youtube.com/watch?v=8mqe8jDigMk&list=PLC4d9Yu1vCsn4mAESXLUDmyxFC0vR3KOI&index=2)
+#### Camera-2
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=8mqe8jDigMk&list=PLC4d9Yu1vCsn4mAESXLUDmyxFC0vR3KOI&index=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### [Camera-3](https://www.youtube.com/watch?v=jzBmvpLR_ZA&list=PLC4d9Yu1vCsn4mAESXLUDmyxFC0vR3KOI&index=3)
+#### Camera-3
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=jzBmvpLR_ZA&list=PLC4d9Yu1vCsn4mAESXLUDmyxFC0vR3KOI&index=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### [Camera-4](https://www.youtube.com/watch?v=L63fW94txoA&list=PLC4d9Yu1vCsn4mAESXLUDmyxFC0vR3KOI&index=4)
+#### Camera-4
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=L63fW94txoA&list=PLC4d9Yu1vCsn4mAESXLUDmyxFC0vR3KOI&index=4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Contributing
 If you found any errors or bugs in our program or new dataset please contact: terry.tianya.zhang@gmail.com
