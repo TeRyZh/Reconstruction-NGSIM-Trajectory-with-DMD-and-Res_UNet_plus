@@ -14,7 +14,7 @@ This repo contains the model and data for reconstructing NGSIM dataset. [Paper L
 5. [Contributing](#contributing) 
 
 ### Scanline-and-Spatial-Temporal-Map
-  The Scanline method stems from the Spatial-Temporal Slice (STS) structure used in computer vision literature. In transportation research, the technique is named as scanline method, which are a set of pixels that can capture object movements on user-selected roadway from the video image. After stacking scanline pixels together over continuous frames, Spatial Temporal Map (STMap) is obtained. On STMap, the horizontal axis shows the time progression, and the vertical axis contains distance information. 
+  The Longitudinal Scanline method stems from the Spatial-Temporal Slice (STS) structure used in computer vision literature. In transportation research, the technique is named as scanline method, which are a set of pixels that can capture object movements on user-selected roadway from the video image. After stacking scanline pixels together over continuous frames, Spatial Temporal Map (STMap) is obtained. On STMap, the horizontal axis shows the time progression, and the vertical axis contains distance information. 
 
 <p align="center">
   <img  width="550" height="200" src="https://github.com/TeRyZh/Reconstructing-NGSIM-Trajectory-with-ResUnet--and-DMD/blob/main/figs/STMap_generation.png" >
