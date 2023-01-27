@@ -2,7 +2,7 @@
 This repo contains the model and data for reconstructing NGSIM dataset. [Paper Link](https://arxiv.org/abs/2201.04755)
 
 ### Table of contents
-1. [Scanline and Spatial Temporal Map](#Scanline-and-Spatial-Temporal-Map)
+1. [Longitudinal Scanline and Spatial Temporal Map](#Longitudinal-Scanline-and-Spatial-Temporal-Map)
 2. [About DMD](#Dyanmic-Mode-Decomposition)
 3. [Res-Unet+ Model](#Res_UNet_plus-Model)
 4. [NGSIM Data Reconstruction](#NGSIM-Data-Reconstruction)
@@ -13,7 +13,7 @@ This repo contains the model and data for reconstructing NGSIM dataset. [Paper L
     * [Camera 4](#Camera-4)
 5. [Contributing](#contributing) 
 
-### Scanline-and-Spatial-Temporal-Map
+### Longitudinal-Scanline-and-Spatial-Temporal-Map
   The Longitudinal Scanline method stems from the Spatial-Temporal Slice (STS) structure used in computer vision literature. In transportation research, the technique is named as scanline method, which are a set of pixels that can capture object movements on user-selected roadway from the video image. After stacking scanline pixels together over continuous frames, Spatial Temporal Map (STMap) is obtained. On STMap, the horizontal axis shows the time progression, and the vertical axis contains distance information. 
 
 <p align="center">
